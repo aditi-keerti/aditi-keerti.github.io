@@ -17,17 +17,18 @@
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-    <nav class="navbar">
+    <nav class="navbar"  id="nav-menu">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <div class="logo"><a href="#">adi<span>ti.</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
-                
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#services" class="menu-btn">Statistics</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                
                 <li><a href="#teams" class="menu-btn">Projects</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
+               <li> <a href="/images/Aditi Bhadoriya-fw28_027-Node JS Developer.pdf" class="menu-btn" id="resume-link-1" target="_blank" download><button id="cv-btn">Download CV</button></a></li> 
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -41,13 +42,13 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Aditi Bhadoriya</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="#">Hire me</a>
+                <a href="#contact">Contact me</a>
             </div>
             <div class="home-img"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/601014116770475.6068beff4640a.gif" alt="img"></div>
         </div>
     </section>
     <!-- about section start -->
-    <section class="about" id="about">
+    <section class="about section" id="about">
         <div class="max-width">
             <h2 class="title">About me</h2>
             <div class="about-content">
@@ -57,7 +58,10 @@
                 <div class="column right">
                     <div class="text">I'm Aditi and I'm a <span class="typing-2"></span></div>
                     <p>I am a Full stack Developer who is passionate about making open-source more accessible, creating software to elevate people, and building community. Some technologies I enjoy working with includes ReactJS and NodeJS. I love to learn new things every day and I am a data structure lover and web developing punk.</p>
-                    <a href="#">Download CV</a>
+                    
+                    <a href="https://github.com/aditi-keerti"><span class="iconify logo" data-icon="skill-icons:github-dark" data-inline="false" data-width="50px" data-height="50px" id="git-btn"></span></a>
+                    <a href="https://www.linkedin.com/in/aditi-bhadoriya"><span class="iconify logo" data-icon="bi:linkedin" data-inline="false" data-width="50px" data-height="50px" id="linkedin-btn"></span></a>
+                  
                 </div>
             </div>
         </div>
@@ -70,16 +74,19 @@
                 <div class="card">
                     <div class="box">
                         <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=aditi-keerti&theme=dracula&card_width=350&hide_border=true" alt="GitHub Streak" /></a>
+                       
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                        <img src="https://github-readme-stats.vercel.app/api?username=aditi-keerti&show_icons=true&rank_icon=github&theme=dracula&hide_border=true" alt="readme-stat">
+                      
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aditi-keerti&layout=compact&hide_progress=false&theme=dracula&hide_border=true" alt="readme-lang">
+                        
                     </div>
                 </div>
                </div>
@@ -114,43 +121,68 @@
         </div>
     </section>
     <!-- teams section start -->
-    <section class="teams" id="teams">
+    <section class="teams" id="projects">
         <div class="max-width">
             <h2 class="title">My Projects</h2>
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="images/project1.png" alt="">
-                        <div class="text">Netflix Clone</div>
-                        <p>I have made this Netflix Clone using HTML &amp; CSS.</p>
+                        <img src="images/coinsquare.png" alt="">
+                        <div class="text">Coinsquare</div>
+                        <p>Crypto-Currency Website(Full-Stack Project)</p>
+                        <div class="links">
+                            <a href="https://github.com/aditi-keerti/web-warrior-8765" ><span class="iconify logo" data-icon="bi:github" data-inline="true" data-width="50px" data-height="50px"></span></a>
+                        <a href="https://coinsquare-web-warrior.netlify.app/" ><span class="iconify logo" data-icon="ph:link-fill" data-inline="true" data-width="50px" data-height="50px"></span></a>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/project2.png" alt="">
-                        <div class="text">Movie App</div>
-                        <p>I have made this amazing Movie App using HTML , Bootstrap , API &amp; React.JS.</p>
+                        <img src="images/banjara.png" alt="">
+                        <div class="text">Banjara</div>
+                        <p>A Ravish Travel Website using HTML,CSS &amp; JavaScript</p>
+                        <div class="links">
+                            <a href="https://github.com/aditi-keerti/pixel-pioneer-7654" ><span class="iconify logo" data-icon="bi:github" data-inline="true" data-width="50px" data-height="50px"></span></a>
+                        <a href="https://pixel-pioneer-7654.netlify.app/" ><span class="iconify logo" data-icon="ph:link-fill" data-inline="true" data-width="50px" data-height="50px"></span></a>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/project3.png" alt="">
-                        <div class="text">Linkedin Automation</div>
-                        <p>I have made this Project using JavaScript &amp; Puppeteer Node library</p>
+                        <img src="images/vestal truble.png" alt="">
+                        <div class="text">Vestral Trouble</div>
+                        <p>Portfolio Website using HTML &amp; CSS</p>
+                        <div class="links">
+                            <a href="https://github.com/aditi-keerti/vestal-trouble-683" ><span class="iconify logo" data-icon="bi:github" data-inline="true" data-width="50px" data-height="50px"></span></a>
+                        <a href="https://vestal-trouble.netlify.app/" ><span class="iconify logo" data-icon="ph:link-fill" data-inline="true" data-width="50px" data-height="50px"></span></a>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/project4.png" alt="">
-                        <div class="text">Portfolio Website</div>
+                        <img src="images/Screenshot (1608).png" alt="">
+                        <div class="text">Apollo Hospital(Clone)</div>
                         <p>I have made this Project using HTML , CSS and JavaScript</p>
+                        <div class="links">
+                            <a href="https://github.com/aditi-keerti/apollo-hospitalclone-website" ><span class="iconify logo" data-icon="bi:github" data-inline="true" data-width="50px" data-height="50px"></span></a>
+                        <a href="https://apollohospitalclone.netlify.app/" ><span class="iconify logo" data-icon="ph:link-fill" data-inline="true" data-width="50px" data-height="50px"></span></a>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/project5.png" alt="">
-                        <div class="text">ESPN CricInfo Scrapper</div>
-                        <p>I have made this Project using HTML &amp; NodeJS</p>
+                        <img src="images/chitchat.png" alt="">
+                        <div class="text">Chit-Chat App</div>
+                        <p>Chat Application (Full-Stack Website)</p>
+                        <div class="links">
+                            <a href="https://github.com/aditi-keerti/chitChatApp" ><span class="iconify logo" data-icon="bi:github" data-inline="true" data-width="50px" data-height="50px"></span></a>
+                        <a href="https://apollohospitalclone.netlify.app/" ><span class="iconify logo" data-icon="ph:link-fill" data-inline="true" data-width="50px" data-height="50px"></span></a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -197,20 +229,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="https://formspree.io/f/mayrenjr" method="POST">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Name" name="name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" placeholder="Email" name="email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" placeholder="Subject" name="subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Message.." name="message" required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>

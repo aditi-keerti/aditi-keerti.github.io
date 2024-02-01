@@ -1,5 +1,5 @@
 /*  import google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -114,12 +114,34 @@ section .title::after{
     font-weight: 500;
     margin-left: 20px;
     transition: color 0.3s ease;
+    
 }
+
 .navbar .menu li a:hover{
     color: #946ADC;
+    /* background: rgb(235, 16, 141); */
 }
+
 .navbar.sticky .menu li a:hover{
+    color: #fddefb;
+    
+}
+.menu-btn #cv-btn{
+    display: inline-block;
+    background: rgb(235, 16, 141);
     color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 25px;
+    border: 2px solid #946ADC;
+    transition: all 0.3s ease;
+}
+.menu-btn #cv-btn:hover{
+    background: #fff;
+    border: 2px solid #946ADC;
+    color:rgb(235, 16, 141);
 }
 /* menu btn styling */
 .menu-btn{
@@ -196,7 +218,7 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: #946ADC;
+    color: #8e5fdf;
     font-weight: 500;
 }
 .home .home-content a{
@@ -237,6 +259,11 @@ section .title::after{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    line-height: 2rem;
+}
+.about .about-content .right p{
+    line-height: 1.5rem;
+    font-size: 20px;
 }
 .about .about-content .right .text span{
     color: #946ADC;
@@ -244,22 +271,21 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
-.about .about-content .right a{
-    display: inline-block;
-    background: #946ADC;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #946ADC;
-    transition: all 0.3s ease;
+.about .about-content .right .logo {
+    margin-top: 10%; /* Increase the margin-top for initial positioning */
+    color: #2a203b;
+    margin: 2%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: translateZ(0); /* Ensure hardware acceleration for smoother animations */
 }
-.about .about-content .right a:hover{
-    color: #946ADC;
-    background: none;
+
+.about .about-content .right .logo:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05) translateY(-10px); /* Scale and move up on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0.1, 0.5); /* Add a box shadow for a lift effect */
 }
+
 /* services section styling */
 .services, .teams{
     color:#fff;
@@ -350,36 +376,47 @@ section .title::after{
     color: #946ADC;
     background: none;
 } */
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content{
+.skills .skills-content {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-around;
     gap: 2%;
 }
-.skills .skills-content .logo{
+
+.skills .skills-content .logo {
+    width: 150px; /* Set a fixed width for the cards */
+    height: 150px; /* Set a fixed height for the cards */
     margin-top: 5%;
+    padding: 2%;
     cursor: pointer;
-    /* background: #d4c1f3; */
     transition: all 0.3s ease;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    overflow: hidden; /* Hide any content that might overflow */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+    background: #f2eef8;
 }
-.skills .skills-content .logo:hover{
-    transform: scale(1.05);
+
+.skills .skills-content .logo:hover {
+    transform: scale(1.1); /* Scale the card on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0.1, 0.5); /* Increase the box shadow on hover */
 }
+
+
 /* teams section styling */
 .teams .title::after{
     content: "who with me";
 }
 .teams .carousel .card{
-    background: #222;
+    background: #fff;
+    color: #222;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    aspect-ratio: 9/10;
+    object-fit: contain;
 }
 .teams .carousel .card:hover{
     background: #946ADC;
@@ -409,6 +446,12 @@ section .title::after{
 }
 .teams .carousel .card:hover img{
     border-color: #fff;
+}
+.teams .carousel .card .box .links{
+    margin-top: 10%;
+}
+.teams .carousel .card .box .links a:hover{
+   color: #f1f1f1;
 }
 .owl-dots{
     text-align: center;
