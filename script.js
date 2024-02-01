@@ -70,6 +70,6 @@ $(document).ready(function(){
 // Resume download
 document.getElementById("resume-link-1").onclick = () => {
     window.open(
-      "https://drive.google.com/file/d/1-Be0bEGnfoxSr8OzpdPSOShGyew2D0QN/view?usp=drive_link"
+      "https://drive.google.com/file/d/1vzEWvqYDZm_Lju1zNOWbX5dc0Jy-XO9C/view?usp=sharing"
     );
   };
