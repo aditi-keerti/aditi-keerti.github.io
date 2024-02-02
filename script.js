@@ -25,9 +25,9 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "smooth");
     });
     // toggle menu/navbar script
-    $('.menu-btn').click(function(){
+    $('.nav-link').click(function(){
         $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
+        $('.nav-link i').toggleClass("active");
     });
     // typing text animation script
     var typed = new Typed(".typing", {
@@ -68,8 +68,13 @@ $(document).ready(function(){
 
 
 // Resume download
-document.getElementById("resume-link-1").onclick = () => {
+document.getElementsByClassName("resume-link-1").onclick = () => {
     window.open(
-      "https://drive.google.com/file/d/1vzEWvqYDZm_Lju1zNOWbX5dc0Jy-XO9C/view?usp=sharing"
+      "https://drive.google.com/file/d/1-Be0bEGnfoxSr8OzpdPSOShGyew2D0QN/view?usp=drive_link"
+    );
+  };
+  document.getElementsByClassName("resume-link-2").onclick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1-Be0bEGnfoxSr8OzpdPSOShGyew2D0QN/view?usp=drive_link"
     );
   };

@@ -126,7 +126,7 @@ section .title::after{
     color: #fddefb;
     
 }
-.menu-btn #cv-btn{
+.nav-link #cv-btn{
     display: inline-block;
     background: rgb(235, 16, 141);
     color: #fff;
@@ -138,13 +138,13 @@ section .title::after{
     border: 2px solid #946ADC;
     transition: all 0.3s ease;
 }
-.menu-btn #cv-btn:hover{
+.nav-link #cv-btn:hover{
     background: #fff;
     border: 2px solid #946ADC;
     color:rgb(235, 16, 141);
 }
 /* menu btn styling */
-.menu-btn{
+.nav-link{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
@@ -178,7 +178,7 @@ section .title::after{
     filter: brightness(90%);
 }
 /* home section styling */
-.home{
+.home1{
     display: flex;
     /* background: url("images/photo.png") no-repeat center; */
     background: #d4c1f3;
@@ -189,39 +189,39 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
-.home .max-width{
+.home1 .max-width{
   width: 100%;
   display: flex;
   gap: 50px;
   margin-right: 0%;
   margin-left: 10%;
 }
-.home .max-width .row{
+.home1 .max-width .row{
   margin-right: 0%;
 }
-.home .home-content{
+.home1 .home-content{
     width: 80%;
 }
-.home .home-content .text-1{
+.home1 .home-content .text-1{
     font-size: 27px;
 }
-.home .home-content .text-2{
+.home1 .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content img{
+.home1 .home-content img{
     position: fixed;
 }
-.home .home-content .text-3{
+.home1 .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+.home1 .home-content .text-3 span{
     color: #8e5fdf;
     font-weight: 500;
 }
-.home .home-content a{
+.home1 .home-content a{
     display: inline-block;
     background: #946ADC;
     color: #fff;
@@ -233,14 +233,12 @@ section .title::after{
     border: 2px solid #946ADC;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
+.home1 .home-content a:hover{
     color: #946ADC;
     background: none;
 }
 /* about section styling */
-.about .title::after{
-    content: "who i am";
-}
+
 .about .about-content .left{
     width: 45%;
 }
@@ -272,7 +270,7 @@ section .title::after{
     text-align: justify;
 }
 .about .about-content .right .logo {
-    margin-top: 10%; /* Increase the margin-top for initial positioning */
+    margin-top: 20%; /* Increase the margin-top for initial positioning */
     color: #2a203b;
     margin: 2%;
     cursor: pointer;
@@ -285,15 +283,55 @@ section .title::after{
     transform: scale(1.05) translateY(-10px); /* Scale and move up on hover */
     box-shadow: 0 10px 20px rgba(0, 0, 0.1, 0.5); /* Add a box shadow for a lift effect */
 }
-
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 5%;
+}
+.btns #resume-link-2{
+    display: inline-block;
+    background: #946ADC;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    /* margin-top: 20px; */
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #946ADC;
+    transition: all 0.3s ease;
+}
+.btns #resume-link-2:hover{
+    background: #fff;
+    border: 2px solid #946ADC;
+    color: #946ADC;
+}
 /* services section styling */
-.services, .teams{
+.services,.skills{
     color:#fff;
     background: #D4C1F3;
 }
 .services .max-width{
     display: grid;
-
+    align-items: center;
+    justify-content: center;
+}
+.services .max-width .git-chart{
+    background:#fff;
+    text-align: center;
+    /* justify-content: center; */
+    /* width:max-content; */
+    /* margin-left: 20%; */
+    margin-bottom: 5%;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.services .max-width .git-chart img{
+    width:95%;
 }
 .services .max-width .serv-content .card .box img{
  width: 95%;
@@ -304,15 +342,10 @@ section .title::after{
     object-fit: contain;
     /* mix-blend-mode: color-burn; */
 }
-.services .title::before,
-.teams .title::before{
+.services .title::before,.skills .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
-    background: #D4C1F3;
-    content: "what i provide";
-}
+
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #282A36;
@@ -345,46 +378,25 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 /* skills section styling */
-.skills .title::after{
-    content: "what i know";
+.skills{
+    background:#D4C1F3;
 }
+
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
 
-/* .skills .skills-content .left .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-    text-align: justify;
-} */
-/* .skills .skills-content .left a{
-    display: inline-block;
-    background: #946ADC;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #946ADC;
-    transition: all 0.3s ease;
-} */
-/* .skills .skills-content .left a:hover{
-    color: #946ADC;
-    background: none;
-} */
+
 .skills .skills-content {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-around;
     gap: 2%;
+    
 }
 
-.skills .skills-content .logo {
+.skills .skills-content .skill-div {
     width: 150px; /* Set a fixed width for the cards */
     height: 150px; /* Set a fixed height for the cards */
     margin-top: 5%;
@@ -395,20 +407,27 @@ section .title::after{
     overflow: hidden; /* Hide any content that might overflow */
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
     background: #f2eef8;
+    color: #111;
+    font-weight: 800;
+    text-align: center;
 }
-
-.skills .skills-content .logo:hover {
+.skills .skills-content .skill-div p{
+    margin-bottom: 8%;
+}
+.skills .skills-content .skill-div:hover {
+    
     transform: scale(1.1); /* Scale the card on hover */
     box-shadow: 0px 8px 16px rgba(0, 0, 0.1, 0.5); /* Increase the box shadow on hover */
 }
 
 
 /* teams section styling */
-.teams .title::after{
-    content: "who with me";
-}
-.teams .carousel .card{
+.teams{
     background: #fff;
+}
+
+.teams .carousel .card{
+    background:#e5d6fd;
     color: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -417,6 +436,8 @@ section .title::after{
     transition: all 0.3s ease;
     aspect-ratio: 9/10;
     object-fit: contain;
+    box-sizing: border-box;
+
 }
 .teams .carousel .card:hover{
     background: #946ADC;
@@ -431,7 +452,7 @@ section .title::after{
 .teams .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.teams .carousel .card .project-title{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -440,9 +461,14 @@ section .title::after{
     height: 150px;
     width: 150px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 5px solid #946ADC;
     transition: all 0.3s ease;
+}
+.teams .carousel .card .box .project-tech-stack{
+    margin: 2%;
+    font-weight: 700;
+    
 }
 .teams .carousel .card:hover img{
     border-color: #fff;
@@ -475,9 +501,7 @@ section .title::after{
     background: #946ADC!important;
 }
 /* contact section styling */
-.contact .title::after{
-    content: "get in touch";
-}
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -503,6 +527,23 @@ section .title::after{
 .contact .contact-content .row .logo{
     font-size: 25px;
     color: #946ADC;
+}
+.contact .right .contact-links{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+.contact .right .contact-links a{
+    margin-top: 20%; /* Increase the margin-top for initial positioning */
+    color: #2a203b;
+    margin: 2%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: translateZ(0); 
+}
+#linkedin-btn{
+    color: #2a203b;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -596,11 +637,11 @@ footer span a:hover{
     }
 }
 @media (max-width: 947px){
-    .menu-btn{
+    .nav-link{
         display: block;
         z-index: 999;
     }
-    .menu-btn i.active:before{
+    .nav-link i.active:before{
         content: "\f00d";
     }
     .navbar .menu{
@@ -625,13 +666,13 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-2{
+    .home1 .home-content .text-2{
         font-size: 70px;
     }
-    .home .home-content .text-3{
+    .home1 .home-content .text-3{
         font-size: 35px;
     }
-    .home .home-content a{
+    .home1 .home-content a{
         font-size: 23px;
         padding: 10px 30px;
     }
@@ -651,6 +692,7 @@ footer span a:hover{
     }
     .about .about-content .right{
         flex: 100%;
+        align-items: center;
     }
     .services .serv-content .card{
         width: calc(50% - 10px);
@@ -661,18 +703,19 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+    
 }
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
     }
-    .home .home-content .text-2{
+    .home1 .home-content .text-2{
         font-size: 60px;
     }
-    .home .home-content .text-3{
+    .home1 .home-content .text-3{
         font-size: 32px;
     }
-    .home .home-content a{
+    .home1 .home-content a{
         font-size: 20px;
     }
     .services .serv-content .card{
@@ -680,10 +723,10 @@ footer span a:hover{
     }
 }
 @media (max-width: 500px) {
-    .home .home-content .text-2{
+    .home1 .home-content .text-2{
         font-size: 50px;
     }
-    .home .home-content .text-3{
+    .home1 .home-content .text-3{
         font-size: 27px;
     }
     .about .about-content .right .text,
