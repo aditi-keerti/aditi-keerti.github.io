@@ -32,12 +32,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills1, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
+.skills1 .skills-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -239,10 +239,10 @@ section .title::after{
 }
 /* about section styling */
 
-.about .about-content .left{
+.about .about-content .home-img{
     width: 45%;
 }
-.about .about-content .left img{
+.about .about-content .home-img img{
     height: 400px;
     width: 400px;
     object-fit: cover;
@@ -293,7 +293,7 @@ section .title::after{
     gap: 5%;
     margin-top: 5%;
 }
-.btns #resume-link-2{
+.btns #resume-button-2{
     display: inline-block;
     background: #946ADC;
     color: #fff;
@@ -305,13 +305,13 @@ section .title::after{
     border: 2px solid #946ADC;
     transition: all 0.3s ease;
 }
-.btns #resume-link-2:hover{
+.btns #resume-button-2:hover{
     background: #fff;
     border: 2px solid #946ADC;
     color: #946ADC;
 }
 /* services section styling */
-.services,.skills{
+.services,.skills1{
     color:#fff;
     background: #D4C1F3;
 }
@@ -342,7 +342,7 @@ section .title::after{
     object-fit: contain;
     /* mix-blend-mode: color-burn; */
 }
-.services .title::before,.skills .title::before{
+.services .title::before,.skills1 .title::before{
     background: #fff;
 }
 
@@ -378,16 +378,16 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 /* skills section styling */
-.skills{
+.skills1{
     background:#D4C1F3;
 }
 
-.skills .skills-content .column{
+.skills1 .skills-content .column{
     width: calc(50% - 30px);
 }
 
 
-.skills .skills-content {
+.skills1 .skills-content {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
@@ -396,7 +396,7 @@ section .title::after{
     
 }
 
-.skills .skills-content .skill-div {
+.skills1 .skills-content .skills-card {
     width: 150px; /* Set a fixed width for the cards */
     height: 150px; /* Set a fixed height for the cards */
     margin-top: 5%;
@@ -411,10 +411,10 @@ section .title::after{
     font-weight: 800;
     text-align: center;
 }
-.skills .skills-content .skill-div p{
+.skills1 .skills-content .skills-card p{
     margin-bottom: 8%;
 }
-.skills .skills-content .skill-div:hover {
+.skills1 .skills-content .skills-card:hover {
     
     transform: scale(1.1); /* Scale the card on hover */
     box-shadow: 0px 8px 16px rgba(0, 0, 0.1, 0.5); /* Increase the box shadow on hover */
@@ -426,7 +426,7 @@ section .title::after{
     background: #fff;
 }
 
-.teams .carousel .card{
+.teams .carousel .project-card{
     background:#e5d6fd;
     color: #222;
     border-radius: 6px;
@@ -439,25 +439,25 @@ section .title::after{
     box-sizing: border-box;
 
 }
-.teams .carousel .card:hover{
+.teams .carousel .project-card:hover{
     background: #946ADC;
 }
-.teams .carousel .card .box{
+.teams .carousel .project-card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.teams .carousel .project-card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .project-title{
+.teams .carousel .project-card .project-title{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.teams .carousel .project-card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -465,18 +465,18 @@ section .title::after{
     border: 5px solid #946ADC;
     transition: all 0.3s ease;
 }
-.teams .carousel .card .box .project-tech-stack{
+.teams .carousel .project-card .box .project-tech-stack{
     margin: 2%;
     font-weight: 700;
     
 }
-.teams .carousel .card:hover img{
+.teams .carousel .project-card:hover img{
     border-color: #fff;
 }
-.teams .carousel .card .box .links{
+.teams .carousel .project-card .box .links{
     margin-top: 10%;
 }
-.teams .carousel .card .box .links a:hover{
+.teams .carousel .project-card .box .links a:hover{
    color: #f1f1f1;
 }
 .owl-dots{
@@ -626,7 +626,7 @@ footer span a:hover{
 }
 /* responsive media query start */
 @media (max-width: 1104px) {
-    .about .about-content .left img{
+    .about .about-content .home-img img{
         height: 350px;
         width: 350px;
     }
@@ -685,7 +685,7 @@ footer span a:hover{
     .about .about-content .column{
         width: 100%;
     }
-    .about .about-content .left{
+    .about .about-content .home-img{
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
@@ -698,7 +698,7 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
+    .skills1 .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -730,7 +730,7 @@ footer span a:hover{
         font-size: 27px;
     }
     .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    .skills1 .skills-content .left .text{
         font-size: 19px;
     }
     .contact .right form .fields{
