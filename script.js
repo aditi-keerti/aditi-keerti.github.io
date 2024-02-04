@@ -78,3 +78,12 @@ document.getElementsByClassName("resume-button-1").onclick = () => {
       "https://drive.google.com/file/d/1-Be0bEGnfoxSr8OzpdPSOShGyew2D0QN/view?usp=drive_link"
     );
   };
+
+//   mobile number
+document.getElementById('contact-phone').addEventListener('click', function() {
+    window.location.href = 'tel:+918871910886';
+  });
+//   email
+  document.getElementById('contact-email').addEventListener('click', function() {
+    window.location.href = 'mailto:aditibhadoriya1333@example.com';
+  });

@@ -437,7 +437,7 @@ section .title::after{
     aspect-ratio: 9/10;
     object-fit: contain;
     box-sizing: border-box;
-
+    /* box-shadow: 0px 8px 16px rgba(0, 0.1, 0.5, 0); */
 }
 .teams .carousel .project-card:hover{
     background: #946ADC;
@@ -520,6 +520,7 @@ section .title::after{
     display: flex;
     height: 65px;
     align-items: center;
+    cursor: pointer;
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
