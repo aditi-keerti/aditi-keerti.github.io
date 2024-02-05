@@ -68,12 +68,12 @@ $(document).ready(function(){
 
 
 // Resume download
-document.getElementsByClassName("resume-button-1").onclick = () => {
+document.getElementById("resume-button-1").onclick = () => {
     window.open(
       "https://drive.google.com/file/d/1-Be0bEGnfoxSr8OzpdPSOShGyew2D0QN/view?usp=drive_link"
     );
   };
-  document.getElementsByClassName("resume-button-2").onclick = () => {
+  document.getElementById("resume-button-2").onclick = () => {
     window.open(
       "https://drive.google.com/file/d/1-Be0bEGnfoxSr8OzpdPSOShGyew2D0QN/view?usp=drive_link"
     );
