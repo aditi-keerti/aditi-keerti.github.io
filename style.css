@@ -434,7 +434,7 @@ section .title::after{
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
-    aspect-ratio: 9/10;
+    /* aspect-ratio: 9/10; */
     object-fit: contain;
     box-sizing: border-box;
     /* box-shadow: 0px 8px 16px rgba(0, 0.1, 0.5, 0); */
@@ -475,6 +475,11 @@ section .title::after{
 }
 .teams .carousel .project-card .box .links{
     margin-top: 10%;
+   
+}
+.teams .carousel .project-card .box .links .logo{
+    height: 50px;
+    width: 50px;
 }
 .teams .carousel .project-card .box .links a:hover{
    color: #f1f1f1;
@@ -753,3 +758,86 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+/* media queries for project card */
+/* Small devices (phones) */
+ @media only screen and (max-width: 600px) {
+    .teams .carousel .project-card {
+        padding: 15px 20px;
+        aspect-ratio: none;
+    }
+    .teams .carousel .project-card .box .project-tech-stack{
+        font-size: 12px;
+    }
+    .teams .carousel .project-card .project-title {
+        font-size: 20px;
+    }
+    .teams .carousel .project-card .box .links .logo{
+        height: 30px;
+        width: 30px;
+    }
+    .teams .carousel .project-card img {
+        height: 100px;
+        width: 100px;
+    }
+} 
+
+/* Medium devices (tablets) */
+ @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .teams .carousel .project-card {
+        padding: 20px 25px;
+        aspect-ratio: none;
+    }
+    .teams .carousel .project-card .box .project-tech-stack{
+        font-size: 16px;
+    }
+    .teams .carousel .project-card .project-title {
+        font-size: 22px;
+    }
+
+    .teams .carousel .project-card img {
+        height: 120px;
+        width: 120px;
+    }
+    .teams .carousel .project-card .box .links .logo{
+        height: 35px;
+        width: 35px;
+    }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 1025px) {
+    /* Your original styles remain unchanged for larger screens */
+    .teams .carousel .project-card {
+        padding: 25px 65px;
+        aspect-ratio: 9/10;
+    }
+
+    .teams .carousel .project-card .project-title {
+        font-size: 25px;
+    }
+
+    .teams .carousel .project-card img {
+        height: 150px;
+        width: 150px;
+    }
+}
+/* Extra small devices */
+@media only screen and (max-width: 571px) {
+    .teams .carousel .project-card {
+        padding: 10px 15px;
+        
+    }
+    .teams .carousel .project-card .box .project-tech-stack{
+        font-size: 10px;
+    }
+    .teams .carousel .project-card .project-title {
+        font-size: 18px;
+    }
+
+    .teams .carousel .project-card img {
+        height: 80px;
+        width: 80px;
+    }
+} 
+
