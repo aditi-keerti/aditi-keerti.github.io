@@ -21,7 +21,7 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "auto");
     });
     $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
+        // applying again smooth scroll on menu items click   
         $('html').css("scrollBehavior", "smooth");
     });
     // toggle menu/navbar script
@@ -70,12 +70,12 @@ $(document).ready(function(){
 // Resume download
 document.getElementById("resume-button-1").onclick = () => {
     window.open(
-      "https://drive.google.com/file/d/1-Be0bEGnfoxSr8OzpdPSOShGyew2D0QN/view?usp=drive_link"
+      "https://drive.google.com/file/d/1-Be0bEGnfoxSr8OzpdPSOShGyew2D0QN/view?usp=sharing"
     );
   };
   document.getElementById("resume-button-2").onclick = () => {
     window.open(
-      "https://drive.google.com/file/d/1-Be0bEGnfoxSr8OzpdPSOShGyew2D0QN/view?usp=drive_link"
+      "https://drive.google.com/file/d/1-Be0bEGnfoxSr8OzpdPSOShGyew2D0QN/view?usp=sharing"
     );
   };
 

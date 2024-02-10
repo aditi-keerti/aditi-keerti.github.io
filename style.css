@@ -194,7 +194,7 @@ section .title::after{
   display: flex;
   gap: 50px;
   margin-right: 0%;
-  margin-left: 10%;
+  margin-left: 10%;  
 }
 .home1 .max-width .row{
   margin-right: 0%;
