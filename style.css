@@ -678,7 +678,7 @@ footer span a:hover{
     .home1 .home-content .text-3{
         font-size: 35px;
     }
-    .home1 .home-content a{
+    .home1 .home-content a, #resume-button-2{
         font-size: 23px;
         padding: 10px 30px;
     }
@@ -721,7 +721,7 @@ footer span a:hover{
     .home1 .home-content .text-3{
         font-size: 32px;
     }
-    .home1 .home-content a{
+    .home1 .home-content a,#resume-button-2{
         font-size: 20px;
     }
     .services .serv-content .card{
